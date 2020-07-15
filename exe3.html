@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+</head>
+<body>
+    <script>
+       function mensage(mensagem){
+           alert(mensagem);
+       }
+       function parOuImpar(numero){
+        if (numero % 2 != 0) {
+            return {texto:'Impar', numero:numero};
+        }else{
+            return {texto:'Par', numero:numero};
+        }
+       }
+       var resultado = parOuImpar(parseInt(prompt('digite um numero:')));
+       mensage(resultado.texto);
+    </script>
+</body>
+</html>
