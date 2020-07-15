@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relembrando</title>
+</head>
+<body>
+    
+    <script>
+        
+        var nota1 = parseInt(prompt('Digite a nota do primeiro aluno: '));
+        var nota2 = parseInt(prompt('Digite a nota do segundo aluno: '));
+        var nota3 = parseInt(prompt('Digite a nota do terceiro aluno: '));
+
+        if(isNaN(nota1)){
+            nota1 = 0;
+        }
+        if(isNaN(nota2)){
+            nota2 = 0;
+        }
+        
+        if(isNaN(nota3)){
+            nota3 = 0;
+        }
+                
+        
+
+        var soma = nota1 + nota2 + nota3 ;
+        var r = soma/3;
+
+        document.write("A soma das notas de  : " + soma);
+        document.write('<br>Sua media é: '+ r); 
+        
+        //uma condicão se o aluno tive a media 5, então ele passa de ano se não ele e reprovado.
+        if(soma <  60){
+            document.write("<p style ='color:#f00'>Voce não passou de ano</p>");   
+        }else{
+            
+            document.write("<p style ='color:#0000FF'>Voce passou de ano</p>"); 
+        }
+    </script>
+
+   
+</body>
+</html>
